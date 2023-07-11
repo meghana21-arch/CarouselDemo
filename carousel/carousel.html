@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper slider</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <style type="text/css">
+        .top_brands {
+            position: relative;
+            width: 80%;
+            height: auto;
+            margin: auto;
+            font-family: 'Poppins ', sans-serif;
+        }
+        .top_brands h1 {
+            font-size: 28px;
+            font-weight : 500;
+        }
+        .img_box{
+            height: 140px;
+            width: 140px;
+            border-radius: 50%;
+        }
+        .img_box img{
+            /* max-width: 50%;   */
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .slider_container .container{
+            padding: 0 15px;
+            max-width: 1230px;
+            margin: 0 auto;
+        }
+        .card_slider {
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="slider_container">
+        <div class="container">
+            <div class="top_brands">
+                <h1>Top Brands for you</h1>
+                <div class="swiper card_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="images\1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="images\2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="images\3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="images\4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="images\5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="images\6.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="images\7.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="images\8.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="images\9.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="images\10.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="images\11.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="images\12.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper(".card_slider", {
+       
+        //spaceBetween: 2,
+        loop: true,
+        speed: 1000,
+        autoplay:{
+            delay: 2000,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          480: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 4,          
+          },
+        },
+      });
+    </script>
+</body>
+</html>
